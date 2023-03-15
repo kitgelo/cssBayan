@@ -2,19 +2,45 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    background-color: #ececdb;
 }
 
 h1 {
     font-family: Arial, Helvetica, sans-serif;
-    line-height: 2em;
+    line-height: 3em;
 }
 
 .accordion {
-    width: 40%;
+    width: 60%;
     margin: auto;
+}
+
+.accordion-item {
+    z-index: 150;
+}
+
+.accordion .accordion-body {
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    transition: hidden 300ms;
+}
+
+img {
+    margin: auto;
+    display: block;
+    margin-bottom: 0.5em;
+    width: 0;
+    transition: width 300ms;
+}
+
+ .memi-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 0.1em solid #8bc34a;
 }
 
 .accordion input{
     display: none;
 }
-
